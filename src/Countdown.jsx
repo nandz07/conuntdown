@@ -8,6 +8,18 @@ function Countdown() {
     const [seconds, setSeconds] = useState(0)
     const [inputDate, setInputDate] = useState('01 june 2024')
     const [currentDate, setCurrentDate] = useState(inputDate)
+
+    const [count, setCount] = useState(0);
+  const [name, setName] = useState('');
+
+  useEffect(() => {
+    console.log('Count changed:', count);
+  }, [count]);
+
+  useEffect(() => {
+    console.log('Name changed:', name);
+  }, [name]);
+
    
 
     useEffect(() => {
